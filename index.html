@@ -1,89 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spreen Fan Web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spreen Fan Page</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial;
-    color: white;
-    text-align: center;
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1f1f1f, #0a0a0a);
+      color: white;
+    }
 
-    /* 🎨 fondo verde + gris + negro */
-    background: linear-gradient(135deg, #0f3d2e, #2b2b2b, #000000);
-}
+    header {
+      text-align: center;
+      padding: 50px;
+      background: #111;
+    }
 
-header {
-    background: #1f7a4d;
-    padding: 20px;
-    font-size: 28px;
-    font-weight: bold;
-}
+    header h1 {
+      font-size: 50px;
+      color: #00ff88;
+    }
 
-.card {
-    background: rgba(0, 0, 0, 0.6);
-    margin: 20px auto;
-    padding: 20px;
-    width: 80%;
-    border-radius: 12px;
-}
+    header p {
+      font-size: 18px;
+      color: #ccc;
+    }
 
-img {
-    width: 250px;
-    border-radius: 12px;
-    margin: 10px;
-    border: 2px solid #1f7a4d;
-}
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #00ff88;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 10px;
+    }
 
-button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    background: #1f7a4d;
-    color: white;
-    cursor: pointer;
-}
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-button:hover {
-    background: #2ecc71;
-}
-</style>
+    h2 {
+      color: #00ff88;
+    }
 
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+
+    ul {
+      line-height: 1.8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #777;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-🎮 Spreen Fan Web
+  <h1>Spreen</h1>
+  <p>Streamer argentino de Kick y YouTube</p>
+  <a class="btn" href="https://kick.com/" target="_blank">Ver Kick</a>
 </header>
 
-<div class="card">
+<section>
+  <h2>¿Quién es?</h2>
+  <div class="card">
+    <p>
+      :contentReference[oaicite:0]{index=0} es un creador de contenido argentino muy popular,
+      conocido por sus streams en vivo, videos de Minecraft y su estilo divertido y espontáneo.
+    </p>
+  </div>
+</section>
 
-    <h2>¿Quién es Spreen?</h2>
-    <p>Streamer argentino conocido por Minecraft, humor y streams.</p>
+<section>
+  <h2>Contenido</h2>
+  <div class="card">
+    <ul>
+      <li>🎮 Minecraft survival y servidores</li>
+      <li>🎥 Streams en vivo en Kick</li>
+      <li>😂 Videos con amigos y retos</li>
+      <li>🔥 Reacciones y Just Chatting</li>
+    </ul>
+  </div>
+</section>
 
-    <!-- 🖼️ TU FOTO -->
-    <img src="spreen.jpg" alt="Spreen">
+<section>
+  <h2>Por qué es famoso</h2>
+  <div class="card">
+    <p>
+      Su crecimiento fue rápido gracias a su personalidad, su comunidad y su forma simple
+      de hacer contenido entretenido sin complicarse demasiado.
+    </p>
+  </div>
+</section>
 
-</div>
+<section>
+  <h2>Datos curiosos</h2>
+  <div class="card">
+    <ul>
+      <li>🇦🇷 Es uno de los streamers más grandes de Argentina</li>
+      <li>💬 Tiene una comunidad muy activa</li>
+      <li>🎮 Empezó con contenido de Minecraft</li>
+    </ul>
+  </div>
+</section>
 
-<div class="card">
-
-    <h2>Redes</h2>
-
-    <button onclick="window.open('https://www.youtube.com/@Spreen')">
-        YouTube
-    </button>
-
-    <button onclick="window.open('https://kick.com/')">
-        Kick
-    </button>
-
-</div>
+<footer>
+  <p>Fan Page creada por un fan • No oficial</p>
+</footer>
 
 </body>
 </html>
